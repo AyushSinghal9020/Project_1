@@ -1,0 +1,10 @@
+import pandas as pd
+
+#! ---Project 1---
+
+sample = pd.read_csv("https://www.football-data.co.uk/mmz4281/2122/E0.csv")#target website
+print(sample)
+sample.rename(columns = {"FTHG":"home_goals",#renaming the columns 
+                         "FTAG":"away_goals"})
+
+print(sample)
